@@ -104,6 +104,8 @@ img {
 .right-side {
   display: flex;
   flex-direction: column;
+  background-color: #596d48;
+  background-color: rgb(239, 239, 239);
 }
 
 .right-side > div {
@@ -114,7 +116,7 @@ img {
 
 .right-side > div + div {
   background-color: white;
-  padding: 10px 0 0 30px;
+  padding: 10px 0 40px 30px;
 }
 
 form {
@@ -137,7 +139,7 @@ form {
   font-size: 0.75rem;
 }
 
-.form-row input[type="text"] {
+.form-row input {
   border-style: none;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
@@ -148,6 +150,38 @@ form {
   font-weight: 500;
 }
 
+.form-row input[type="password"]:invalid {
+  border-color: red;
+}
+
 form > *:nth-child(n + 3) {
   margin-top: 15px;
+}
+
+.right-side > div + div + div {
+  padding-top: 30px;
+  background-color: rgb(239, 239, 239);
+  padding-left: 30px;
+}
+
+.right-side > div + div + div > p {
+  padding-top: 25px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+span {
+  color: #596d48;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+  background-color: #596d48;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 170px;
+  height: 40px;
 }

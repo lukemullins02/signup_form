@@ -38,7 +38,7 @@
             </div>
             <div class="form-row">
               <label for="email">EMAIL</label>
-              <input type="text" id="email" name="email" />
+              <input type="email" id="email" name="email" />
             </div>
             <div class="form-row">
               <label for="phone">PHONE NUMBER</label>
@@ -46,13 +46,29 @@
             </div>
             <div class="form-row">
               <label for="password">PASSWORD</label>
-              <input type="text" id="password" name="password" />
+              <input
+                type="password"
+                minlength="8"
+                id="password"
+                name="password"
+                required
+              />
             </div>
             <div class="form-row">
               <label for="con_password">CONFIRM PASSWORD</label>
-              <input type="text" id="con_password" name="con_password" />
+              <input
+                type="password"
+                id="con_password"
+                name="con_password"
+                minlength="8"
+                required
+              />
             </div>
           </form>
+        </div>
+        <div>
+          <button>Create Account</button>
+          <p>Already have an account? <span>Log in</span></p>
         </div>
       </div>
     </div>
