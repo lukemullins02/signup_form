@@ -184,6 +184,11 @@ form {
   font-weight: 500;
 }
 
+.form-row input:focus {
+  border: 1px solid blue;
+  box-shadow: 1px 2px 4px #bcbbbb;
+}
+
 .form-row input[type="password"]:invalid {
   border-color: red;
 }
